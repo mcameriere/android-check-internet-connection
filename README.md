@@ -1,7 +1,7 @@
 # android-check-internet-connection
 
 ```java
-private fun isConnectedToInternet(): Boolean {
+    private fun isConnectedToInternet(): Boolean {
         val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             isConnectedForAndroid23AndAbove(connectivityManager)
